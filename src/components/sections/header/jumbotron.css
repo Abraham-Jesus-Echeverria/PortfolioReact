@@ -1,0 +1,25 @@
+.jumbotronContainer{ 
+    height: 700px; 
+    background-color: #0A081D;  
+    display: grid;
+   grid-template-columns: 50px repeat(4, 1fr) 50px; 
+   grid-template-rows: 50px repeat(6, 100px);  
+}  
+.imageContainer{ 
+    width: 400px; 
+    /* height: 700px;  */
+    grid-column: 2/4; 
+    grid-row: 2/5;
+}
+.imageStyle{ 
+    width: 100%; 
+    height: auto;
+} 
+.textContainer{ 
+    color: #fff;   
+    grid-column: 3/5; 
+    grid-row: 3/5;
+}  
+.titleStyle{ 
+    font-size: 3.5rem;
+}
