@@ -10,6 +10,7 @@
     width: 70%; 
 }  
 .listStyle{  
+    font-size: 1.3rem;
     display: flex;  
     justify-content: center; 
     gap: 100px; 
@@ -23,7 +24,6 @@ color: #fff;
     width: 15%;    
     height: 60px;
     position: relative; 
-    /* background-color: orange;  */
 }
 .nameStyle{ 
     width: 15%;  
@@ -34,5 +34,6 @@ color: #fff;
 }
 .nameStyle span{ 
     color: #FF7F27;  
-    font-weight: bold; 
+    font-weight: bold;
+
 }

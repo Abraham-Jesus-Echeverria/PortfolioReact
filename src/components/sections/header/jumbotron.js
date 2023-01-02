@@ -1,6 +1,8 @@
 import React from "react";  
-import "./jumbotron.css"  
-import Computadora from"../../../assets/images/computadora1.jpg"
+import "./jumbotron.css" ; 
+import Computadora from"../../../assets/images/computadora1.jpg";   
+import logo from"../../../assets/images/AE-LOGO-NONEBACKGROUND.png";
+import Button from "../../Button";
 
 export default function Jumbotrom() { 
     return(<> 
@@ -10,6 +12,12 @@ export default function Jumbotrom() {
       </div>
       <div className="textContainer"> 
         <h1 className="titleStyle">¡Hola! me llamo Abraham Echeverria y soy web developer </h1>
+      </div>
+      <div className="buttonContainerJumbotrom"> 
+        <Button styles="buttonJumbotronStyle">¡Contactame ya!</Button>
+      </div> 
+      <div className="logoJumbotromContainer"> 
+        <img src={logo} alt="logitpo-AE" />
       </div>
     </div>
     
