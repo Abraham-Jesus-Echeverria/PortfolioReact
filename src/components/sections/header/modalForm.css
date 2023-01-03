@@ -1,0 +1,26 @@
+.modalFormContainer{ 
+    grid-column: 1/7; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    transform: scale(0); 
+    transition: transform ease-in-out 0.3s;  
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+} 
+
+.modalFormActive{ 
+    transform: scale(1); 
+}
+
+.formContainer{  
+    width: 60%; 
+    background-color: red; 
+    display: flex;  
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}

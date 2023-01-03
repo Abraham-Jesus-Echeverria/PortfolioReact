@@ -1,11 +1,19 @@
-import React from "react";  
+import React,{useState} from "react";  
 import Navbar from "./Navbar";
-import Jumbotrom from "./jumbotron";
-export default function Header(){ 
+import Jumbotrom from "./jumbotron"; 
+import ModalForm from "./modalFormulario"; 
+
+export default function Header(){  
+    const [Modal, setModal] = useState(false);  
+    const modalActive = () =>{ 
+        setModal(!Modal); 
+    }
     return(<> 
-    <header> 
+    <header>   
+        <ModalForm Modal={Modal} modalActive={modalActive}/>
         <Navbar /> 
-        <Jumbotrom />
+        <Jumbotrom modalActive={modalActive} /> 
+        
     </header>
     </>)
 }
