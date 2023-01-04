@@ -6,4 +6,12 @@ body{
   font-size: 1.1rem;
 }
 
+:root { 
+  --color-primario: #0A081D;  
+  --color-secundario: #FF7F27;
+  --color-redes: #1D1A47; 
+  --color-navBar: #0B0F28;
+  --color-white: #fff; 
+  --color-black: #000; 
+}
 

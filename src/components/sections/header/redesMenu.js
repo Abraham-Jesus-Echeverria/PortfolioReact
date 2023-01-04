@@ -3,7 +3,7 @@ const estilosContainer = {
     postion: "absolute", 
     width: "100px", 
     height: "250px", 
-    backgroundColor: "#1D1A47",
+    backgroundColor: "var(--color-redes)",
     marginTop: "10px", 
     display: "flex", 
     justifyContent: "center",  
@@ -12,7 +12,7 @@ const estilosContainer = {
 const etiqueta = {  
     width: "30px",  
     height: "100px", 
-    backgroundColor: "#FF7F27",   
+    backgroundColor: "var(--color-secundario)",   
     position: "absolute",  
     top: "200px", 
     left: "35px",  

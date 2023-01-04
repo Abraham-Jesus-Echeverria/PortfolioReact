@@ -5,7 +5,8 @@ import ModalForm from "./modalFormulario";
 
 export default function Header(){  
     const [Modal, setModal] = useState(false);  
-    const modalActive = () =>{ 
+    const modalActive = (e) =>{  
+        e.preventDefault(); 
         setModal(!Modal); 
     }
     return(<> 

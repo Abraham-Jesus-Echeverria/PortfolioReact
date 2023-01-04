@@ -4,7 +4,7 @@
     justify-content: center; 
     justify-content: space-around;  
     align-items: center; 
-    background-color: #0B0F28;
+    background-color: var(--color-navBar);
 }
 .Navbar{  
     width: 70%; 
@@ -18,7 +18,7 @@
 .Navbar ul li, .Navbar ul li a{ 
 list-style: none; 
 text-decoration: none;
-color: #fff;
+color: var(--color-white);
 }  
 .redes-container{ 
     width: 15%;    
@@ -29,11 +29,11 @@ color: #fff;
     width: 15%;  
     display: flex; 
     justify-content: center; 
-    color: #fff; 
+    color: var(--color-white); 
     font-size: 1.2rem;
 }
 .nameStyle span{ 
-    color: #FF7F27;  
+    color: var(--color-secundario);  
     font-weight: bold;
 
 }

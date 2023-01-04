@@ -1,30 +1,25 @@
 import React from "react"; 
 import "./modalForm.css" 
-import Button from "../../Button";
+import Button from "../../Button"; 
+import Formulario from "../../Formulario";
 
 export default function ModalForm ({Modal, modalActive}) { 
     return(<> 
     <div className={`modalFormContainer ${Modal? "modalFormActive":""}`}> 
-        <div className="formContainer"> 
-            <h2>¡Contactame ya!</h2>
-            <form action="">  
-            <div> 
-                <label htmlFor="Nombre"> Ingresa tu nombre</label> 
-                <input type="text" id="Nombre" name="nombre" />
+        <div className="ModalContentContainer"> 
+        <div className="headerModal"> 
+            <div className="titleModal">  
+                <h2>¡Contactame ya!</h2> 
             </div> 
-            <div> 
-                <label htmlFor="Email"> Ingresa tu correo electronico</label> 
-                <input type="text" id="Email" name="email" />
-            </div> 
-            <div> 
-                <label htmlFor="TEL"> Ingresa tu numero telefonico</label> 
-                <input type="text" id="TEL" name="telefono" />
-            </div> 
-            <div> 
-                <Button handleButton={modalActive}> Cerrar </Button>
+            <div className="containerButtonClose"> 
+                <Button handleButton={modalActive} styles="stylesCloseButtom"> <i className="fa-solid fa-xmark"></i> </Button>  
             </div>
-            
-            </form>
+        </div>
+        <div className="formContainer">
+            <div> 
+                <Formulario styleInputContainer="styleInputContainer" styleInput="styleInput" styleLabel="styleLabel" styleTextArea="styleTextArea"/>
+            </div> 
+        </div>
         </div>
     </div>
     </>)
