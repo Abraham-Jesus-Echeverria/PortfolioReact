@@ -23,7 +23,8 @@
     box-sizing: border-box; 
     padding: 10px 10px 30px 10px;
     border-radius: 10px; 
-    border: solid 2px var(--color-white);
+    border: solid 2px var(--color-white); 
+    min-width: 300px;
 } 
 .headerModal{ 
     /* background-color: blanchedalmond;   */
@@ -82,4 +83,24 @@
     height: 60px; 
     padding: 7px;
     margin-bottom: 10px;
+}
+
+/* _____________________________responsive modal__________________________ */
+
+@media screen and (max-width: 640px) {  
+    .ModalContentContainer{  
+        width: 80%; 
+    } 
+    .formContainer{ 
+        width: 80%; 
+    }
+} 
+
+@media screen and (max-width: 460px) {  
+    .ModalContentContainer{ 
+        width: 90%; 
+    }
+    .formContainer{ 
+        width: 95%;
+    } 
 }

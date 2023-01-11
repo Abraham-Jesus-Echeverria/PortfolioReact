@@ -1,0 +1,15 @@
+.menuHamburgesa{  
+    position: fixed;
+    top: 0;
+    width: 70%;
+    height: 100vh; 
+    background-color: skyblue;
+    z-index: 100;
+    transform: translateX(-110%); 
+    transition: transform linear 0.3s;
+}
+
+.menuHamburgesaActive{ 
+    display: block;
+    transform: translateX(0);
+}

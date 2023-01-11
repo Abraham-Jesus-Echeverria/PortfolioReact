@@ -8,15 +8,11 @@ export default function Jumbotrom({ modalActive }) {
     <>
       <div className="jumbotronContainer">
         <div className="imageContainer">
-          <img
-            src={Computadora}
-            alt="imagen computadora1"
-            className="imageStyle"
-          />
+          <img src={Computadora} alt="imagen computadora1"className="imageStyle"/>
         </div>
         <div className="textContainer">
           <h1 className="titleStyle">
-            ¡Hola! me llamo Abraham Echeverria y soy web developer{" "}
+            ¡Hola! me llamo Abraham Echeverria y soy web developer
           </h1>
         </div>
         <div className="buttonContainerJumbotrom">

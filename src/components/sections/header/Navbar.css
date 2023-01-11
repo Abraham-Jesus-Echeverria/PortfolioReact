@@ -5,6 +5,7 @@
     justify-content: space-around;  
     align-items: center; 
     background-color: var(--color-navBar);
+    min-width: 270px;
 }
 .Navbar{  
     width: 70%; 
@@ -35,5 +36,41 @@ color: var(--color-white);
 .nameStyle span{ 
     color: var(--color-secundario);  
     font-weight: bold;
+
+}
+
+.menuButton{ 
+    display: none;
+}
+
+@media screen and (max-width: 900px ) {
+    .redesMenu { 
+        display: none !important;  
+    }
+    .Navbar{ 
+        display: none; 
+    }
+    .MenuContainer{  
+        justify-content: space-between; 
+        padding: 0 15px; 
+    }
+    .redes-container{ 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+    .menuButton{ 
+        display: block; 
+        width: 25px; 
+        height: 25px; 
+        background-color: var(--color-navBar); 
+        color: var(--color-white);  
+        border: solid 2px var(--color-secundario);
+    }
+    .menuButton:hover{ 
+        cursor: pointer; 
+        transform: scale(1.2);
+    }
+    
 
 }

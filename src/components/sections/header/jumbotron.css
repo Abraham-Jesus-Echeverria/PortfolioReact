@@ -2,8 +2,10 @@
     height: 100vh; 
     background-color: var(--color-primario);  
     display: grid;
-   grid-template-columns: 50px repeat(4, 1fr) 50px; 
-   grid-template-rows: 50px repeat(6, 100px);  
+    grid-template-columns: 50px repeat(4, 1fr) 50px; 
+    grid-template-rows: 50px repeat(6, 100px);   
+    min-width: 300px;
+
 }  
 .imageContainer{ 
     width: 400px; 
@@ -19,6 +21,7 @@
     color: var(--color-white);   
     grid-column: 3/5; 
     grid-row: 3/5;
+    min-width: 270px;
 }  
 .titleStyle{ 
     font-size: 3.5rem;
@@ -60,4 +63,49 @@
 .logoJumbotromContainer img{ 
     width: 100%; 
     height: auto;
+}
+
+/* __________________________responsive Jumbotron_____________________________ */
+
+@media screen and (max-width: 900px) { 
+    .logoJumbotromContainer{ 
+        display: none;
+    } 
+    .buttonContainerJumbotrom{ 
+        grid-column: 3/5; 
+        grid-row: 5/6; 
+        justify-content: center; 
+        align-items: center;
+    }
+    .imageContainer{ 
+        display: none; 
+    } 
+    .textContainer{ 
+        grid-column: 2/6; 
+        grid-row: 3/6; 
+        text-align: center; 
+    } 
+    .nameStyle{ 
+        width: auto;
+    }
+   
+}
+
+@media screen and (max-width: 640px) { 
+    .titleStyle{ 
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 460px) { 
+    .titleStyle{ 
+        font-size: 2.3rem;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    .textContainer{ 
+        grid-column: 1/7; 
+    }
 }
