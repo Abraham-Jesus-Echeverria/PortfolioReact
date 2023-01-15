@@ -22,6 +22,7 @@
     grid-column: 3/5; 
     grid-row: 3/5;
     min-width: 270px;
+    z-index: 99;
 }  
 .titleStyle{ 
     font-size: 3.5rem;
@@ -29,10 +30,9 @@
 .buttonContainerJumbotrom{ 
     grid-column: 3/4; 
     grid-row: 5/6;
-    /* background-color: red;  */
     display: flex; 
-    /* justify-content: center;  */
     align-items: center;
+    z-index: 99;
 }
 .buttonJumbotronStyle{ 
     background-color:rgb(10, 8, 29, 0); 
@@ -55,7 +55,6 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
-    /* background-color: rebeccapurple; */
 } 
 .alignLogo{ 
     width: 70%;
@@ -78,16 +77,22 @@
         align-items: center;
     }
     .imageContainer{ 
-        display: none; 
+        width: 100%;  
+        height: 600px;
+        grid-column: 1/7; 
+        background: url(../../../assets/images/computadora2.jpg) no-repeat center fixed;
+        background-size: cover; 
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); 
+        z-index: 99;
     } 
+    .imageStyle{ 
+        display: none;
+    }
     .textContainer{ 
         grid-column: 2/6; 
         grid-row: 3/6; 
         text-align: center; 
     } 
-    .nameStyle{ 
-        width: auto;
-    }
    
 }
 

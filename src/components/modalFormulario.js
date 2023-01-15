@@ -1,7 +1,7 @@
 import React from "react"; 
 import "./modalForm.css" 
-import Button from "../../Button"; 
-import Formulario from "../../Formulario";
+import Button from "./Button"; 
+import Formulario from "./Formulario";
 
 export default function ModalForm ({Modal, modalActive}) { 
     return(<> 

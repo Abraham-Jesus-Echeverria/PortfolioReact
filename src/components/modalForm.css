@@ -18,7 +18,6 @@
 
 .ModalContentContainer{  
     width: 60%; 
-    /* height: 500px; */
     background-color: var(--color-redes); 
     box-sizing: border-box; 
     padding: 10px 10px 30px 10px;

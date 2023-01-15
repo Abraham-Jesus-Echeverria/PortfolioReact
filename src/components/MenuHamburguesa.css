@@ -1,15 +1,107 @@
 .menuHamburgesa{  
+    display: none;
     position: fixed;
     top: 0;
     width: 70%;
     height: 100vh; 
-    background-color: skyblue;
+    background-color: var(--color-navBar); 
+    color: var(--color-white);
     z-index: 100;
     transform: translateX(-110%); 
-    transition: transform linear 0.3s;
+    transition: transform linear 0.3s;  
+
 }
 
 .menuHamburgesaActive{ 
-    display: block;
     transform: translateX(0);
+} 
+
+.titleMenu{ 
+    text-align: center;
+    padding: 15px 0;
+}
+/* .menuItemContainer { 
+    border-bottom: 2px solid var(--color-secundario); 
+    padding: 15px 0 15px 10px;  
+} */
+
+.LinkStyle{  
+    color: var(--color-white); 
+    text-decoration: none;  
+    font-size: 1.2rem;   
+    display: block;
+    border-bottom: 2px solid var(--color-secundario); 
+    padding: 15px 0 15px 10px;  
+
+}  
+
+.LinkStyle:hover{ 
+    background-color: var(--color-secundario); 
+    color: var(--color-black);
+}
+.menuItemContainer i { 
+    margin-left: 10px;
+} 
+
+.containerRedesMenu{  
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    /* background-color: rebeccapurple;  */
+    margin-top: 30px;
+}
+.redes{  
+    border: 2px solid var(--color-secundario);   
+    border-radius: 10px;
+    width: 70%; 
+    height: 200px;
+}
+.title-redes{ 
+    font-size: 1.2rem;
+    text-align: center; 
+    padding: 5px 0;
+} 
+
+.containerLogoMenu{ 
+    opacity: 0.6;
+    margin-top: 20px;  
+    width: 80%; 
+    margin: 20px auto 0 auto;
+}
+
+.logoHamburguesa { 
+    max-width: 100%; 
+    height: auto;
+}
+.redesMenuHamburguesa{ 
+    border: 2px solid var(--color-secundario); 
+    border-radius: 10px;
+    font-size: 1.5rem; 
+    padding: 10px; 
+    margin: 10px;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+
+} 
+
+.redesMenuHamburguesa h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+} 
+.containerIconsHamburguesa{ 
+    width: 120px; 
+    display: flex; 
+    justify-content: space-between;
+}
+.LinkStyleRedes{ 
+    text-decoration: none; 
+    color: var(--color-white);
+}
+@media screen and (max-width: 900px) { 
+    .menuHamburgesa{ 
+        display: block;
+    }
+    
 }

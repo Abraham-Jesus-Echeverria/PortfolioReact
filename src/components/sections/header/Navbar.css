@@ -1,4 +1,4 @@
-.MenuContainer{  
+.MenuContainer{ 
     height: 60px;
     display: flex; 
     justify-content: center; 
@@ -43,14 +43,19 @@ color: var(--color-white);
     display: none;
 }
 
-@media screen and (max-width: 900px ) {
+@media screen and (max-width: 900px ) { 
+    .nameStyle{ 
+        width: auto; 
+    }
     .redesMenu { 
         display: none !important;  
     }
     .Navbar{ 
         display: none; 
     }
-    .MenuContainer{  
+    .MenuContainer{   
+        position: fixed;  
+        width: 100%;
         justify-content: space-between; 
         padding: 0 15px; 
     }
@@ -58,6 +63,7 @@ color: var(--color-white);
         display: flex; 
         justify-content: center; 
         align-items: center;
+        width: 100px;
     }
     .menuButton{ 
         display: block; 
