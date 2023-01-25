@@ -25,6 +25,7 @@ color: var(--color-white);
     width: 15%;    
     height: 60px;
     position: relative; 
+    z-index: 99;
 }
 .nameStyle{ 
     width: 15%;  

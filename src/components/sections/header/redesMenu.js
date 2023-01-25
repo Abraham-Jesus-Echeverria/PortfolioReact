@@ -1,6 +1,5 @@
 import React from "react";  
 const estilosContainer = {  
-    postion: "absolute", 
     width: "100px", 
     height: "250px", 
     backgroundColor: "var(--color-redes)",
