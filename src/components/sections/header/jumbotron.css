@@ -1,9 +1,8 @@
 .jumbotronContainer{ 
-    /* height: 100vh; */
     background-color: var(--color-primario);  
     display: grid;
     grid-template-columns: 50px repeat(4, 1fr) 50px; 
-    grid-template-rows: 50px repeat(6, 100px) 50px;   
+    grid-template-rows: 50px repeat(6, 110px) 50px;   
     min-width: 300px;
 
 }  
@@ -21,6 +20,9 @@
     grid-row: 3/5;
     min-width: 270px;
     z-index: 99;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }  
 .titleStyle{ 
     font-size: 3.5rem;
@@ -37,15 +39,6 @@
     z-index: 99;  
     margin-top: 15px;
 
-}
-.buttonJumbotronStyle{ 
-    background-color:rgb(10, 8, 29, 0); 
-    border: 2px solid var(--color-secundario); 
-    color: var(--color-white); 
-    border-radius: 5px; 
-    padding: 10px;
-    transition: transform 0.2s linear, background-color 0.2s linear;
-    flex-direction: column;
 }
 .buttonJumbotronStyle:hover{ 
     background-color: var(--color-secundario);  
@@ -70,7 +63,10 @@
 
 /* __________________________responsive Jumbotron_____________________________ */
 
-@media screen and (max-width: 900px) { 
+@media screen and (max-width: 950px) { 
+    .titleStyle{ 
+        width: 70%;
+    }
     .logoJumbotromContainer{ 
         display: none;
     } 
@@ -81,12 +77,11 @@
         align-items: center;
     }
     .imageContainer{  
-        grid-row: 2/9;
+        grid-row: 1/9;
         width: 100%;  
         grid-column: 1/7; 
         background: url(../../../assets/images/computadora2.jpg) no-repeat center fixed;
         background-size: cover; 
-        z-index: 99;
     } 
     .imageStyle{ 
         display: none;
@@ -99,15 +94,20 @@
    
 }
 
-@media screen and (max-width: 640px) { 
+@media screen and (max-width: 650px) { 
     .titleStyle{ 
         font-size: 3rem; 
+        width: 100%; 
     }
 }
 
-@media screen and (max-width: 460px) { 
+@media screen and (max-width: 470px) { 
     .titleStyle{ 
         font-size: 2.3rem;
+        width: 90%;
+    }
+    .textContainer{ 
+        grid-column: 1/7; 
     }
     
 }

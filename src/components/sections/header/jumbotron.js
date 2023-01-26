@@ -14,7 +14,7 @@ export default function Jumbotrom({ modalActive }) {
           <h1 className="titleStyle">
             ¡Hola! me llamo Abraham Echeverria y soy web developer 
             <div className="buttonContainerJumbotrom">
-              <Button styles="buttonJumbotronStyle" handleButton={modalActive}>
+              <Button styles="buttonGlobal" handleButton={modalActive}>
                 ¡Contactame ya!
               </Button>
             </div>
