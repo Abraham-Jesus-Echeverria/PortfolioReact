@@ -1,5 +1,4 @@
 import "./jumbotron.css";
-import Computadora from "../../../assets/images/computadora2.jpg";
 import logo from "../../../assets/images/AE-LOGO-NONEBACKGROUND.png";
 import Button from "../../Button";
 

@@ -10,15 +10,15 @@ export default function MenuHamburguesa({ Menu }) {
        <h2 className="titleMenu">Menu</h2>
         <div className="itemsContainer">
           <div className="menuItemContainer"> 
-          <Link url="#About" linkStyle="LinkStyle">About <i class="fa-solid fa-user"></i> </Link> 
+          <Link url="#About" linkStyle="LinkStyle">About <i className="fa-solid fa-user"></i> </Link> 
           </div> 
 
           <div className="menuItemContainer"> 
-          <Link url="#Proyectos" linkStyle="LinkStyle">Proyectos <i class="fa-solid fa-briefcase"></i> </Link> 
+          <Link url="#Proyectos" linkStyle="LinkStyle">Proyectos <i className="fa-solid fa-briefcase"></i> </Link> 
           </div> 
 
           <div className="menuItemContainer"> 
-          <Link url="#Contacto" linkStyle="LinkStyle">Contacto <i class="fa-solid fa-envelope"></i> </Link> 
+          <Link url="#Contacto" linkStyle="LinkStyle">Contacto <i className="fa-solid fa-envelope"></i> </Link> 
           </div> 
           <div className="containerLogoMenu">  
             <img src={logo} alt="logo" className="logoHamburguesa" />
@@ -26,9 +26,9 @@ export default function MenuHamburguesa({ Menu }) {
           <div className="redesMenuHamburguesa"> 
             <h2> ¡Follow me! </h2>
             <div className="containerIconsHamburguesa"> 
-              <Link url="/gitHub" linkStyle="LinkStyleRedes"><i class="fa-brands fa-github"></i></Link> 
-              <Link url="/codePen" linkStyle="LinkStyleRedes"><i class="fa-brands fa-codepen"></i></Link>
-              <Link url="/Linkedin" linkStyle="LinkStyleRedes"><i class="fa-brands fa-linkedin"></i></Link> 
+              <Link url="/gitHub" linkStyle="LinkStyleRedes"><i className="fa-brands fa-github"></i></Link> 
+              <Link url="/codePen" linkStyle="LinkStyleRedes"><i className="fa-brands fa-codepen"></i></Link>
+              <Link url="/Linkedin" linkStyle="LinkStyleRedes"><i className="fa-brands fa-linkedin"></i></Link> 
             </div>
           </div>
         </div>

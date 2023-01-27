@@ -39,12 +39,7 @@
     z-index: 99;  
     margin-top: 15px;
 
-}
-.buttonJumbotronStyle:hover{ 
-    background-color: var(--color-secundario);  
-    cursor: pointer; 
-    transform: scale(1.2);
-}  
+} 
 .logoJumbotromContainer{ 
     grid-column: 4/7; 
     grid-row: 5/7;  

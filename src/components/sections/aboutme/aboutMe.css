@@ -1,20 +1,21 @@
 .SectionContainer{ 
-    background-color: var(--color-primario); 
     color: var(--color-white);  
-    /* height: 600px; */
-    padding: 60px 0 150px 0;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);   
+    background-color: var(--color-redes);
+    border: none;
+}
+.backgroundAbout{ 
+    background-color: var(--color-primario); 
+    padding: 30px 0 200px 0;
 }
 .titleAbout{ 
     margin-bottom: 40px;
     padding: 0 30px; 
-    font-size: 2.5rem;
     text-align: center;
 }
 .containerContentAbout{ 
     display: flex;  
     width: 90%;  
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .containerImageAbout{
@@ -39,4 +40,48 @@
 .fotoAbout{ 
     max-width: 75%; 
     height: auto;
+}
+.containerButtonAbout{ 
+    display: flex;
+}
+.containerIconsAbout{ 
+    font-size: 2.5rem;
+    display: flex; 
+    gap: 20px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .containerContentAbout{ 
+        display: flex; 
+        flex-direction: column;  
+        justify-content: center; 
+        align-items: center;
+    }
+    .containerImageAbout{ 
+        width: 100%;  
+        margin: 0 0 2rem 0; 
+        padding: 0;
+    } 
+    .containerTextAbout{ 
+        width: 100%; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .containerButtonAbout{ 
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .containerIconsAbout{ 
+        margin: 20px 0 0 0;
+    } 
+    .buttonAbout{ 
+        display: block; 
+        text-align: center;
+        width: auto;
+        text-align: center; 
+        margin-top: 30px;
+    }
 }
