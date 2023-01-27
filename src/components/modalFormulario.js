@@ -17,7 +17,7 @@ export default function ModalForm ({Modal, modalActive}) {
         </div>
         <div className="formContainer">
             <div> 
-                <Formulario styleInputContainer="styleInputContainer" styleInput="styleInput" styleLabel="styleLabel" styleTextArea="styleTextArea"/>
+                <Formulario styleInputContainer="styleInputContainer" styleInput="styleInput" styleLabel="styleLabel" styleTextArea="styleTextArea StyleInput"/>
             </div> 
         </div>
         </div>

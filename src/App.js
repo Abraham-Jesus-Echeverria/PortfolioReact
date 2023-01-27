@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css'; 
 import Header from './components/sections/header/header'; 
 import AboutMe from './components/sections/aboutme/aboutMe';
-import ProyectosSection from './components/sections/proyectos/proyectos';
+import ProyectosSection from './components/sections/proyectos/proyectos'; 
+import Contacto from './components/sections/contacto/contacto';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <AboutMe />
       <ProyectosSection /> 
+      <Contacto /> 
     </div>
   );
 }

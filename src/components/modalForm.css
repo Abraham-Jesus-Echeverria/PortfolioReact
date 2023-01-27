@@ -79,8 +79,7 @@
 }
 .styleTextArea{ 
     resize: none; 
-    height: 60px; 
-    padding: 7px;
+    padding: 0 7px;
     margin-bottom: 10px;
 }
 
