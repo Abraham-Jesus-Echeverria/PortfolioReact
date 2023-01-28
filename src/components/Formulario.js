@@ -26,29 +26,50 @@ export default function Formulario({styleInputContainer,styleLabel,styleInput,st
           <label htmlFor="Nombre" className={styleLabel}>
             Ingresa tu nombre
           </label>
-          <input type="text" id="Nombre" name="name" className={styleInput} value={Inputs.name} onChange={handleChange} onBlur={handleBlur} /> 
-          { 
-          error.name && <p style={errorStyles}>{error.name}</p>
-          }
+          <input
+            type="text"
+            id="Nombre"
+            name="name"
+            className={styleInput}
+            value={Inputs.name}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {error.name && <p style={errorStyles}>{error.name}</p>}
         </div>
+
         <div className={styleInputContainer}>
           <label htmlFor="Email" className={styleLabel}>
             Ingresa tu correo electronico
           </label>
-          <input type="text" id="Email" name="email" className={styleInput} value={Inputs.email} onChange={handleChange} onBlur={handleBlur}/>
-          { 
-          error.email && <p style={errorStyles}>{error.email}</p>
-          }
+          <input
+            type="text"
+            id="Email"
+            name="email"
+            className={styleInput}
+            value={Inputs.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {error.email && <p style={errorStyles}>{error.email}</p>}
         </div>
+
         <div className={styleInputContainer}>
           <label htmlFor="TEL" className={styleLabel}>
             Ingresa tu numero telefonico
           </label>
-          <input type="text" id="TEL" name="telefono" className={styleInput} value={Inputs.telefono} onChange={handleChange} onBlur={handleBlur} />
-          { 
-          error.telefono && <p style={errorStyles}>{error.telefono}</p>
-          }
+          <input
+            type="text"
+            id="TEL"
+            name="telefono"
+            className={styleInput}
+            value={Inputs.telefono}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {error.telefono && <p style={errorStyles}>{error.telefono}</p>}
         </div>
+
         <div className={styleInputContainer}>
           <label htmlFor="comentarios" className={styleLabel}>
             Comentarios
@@ -58,16 +79,15 @@ export default function Formulario({styleInputContainer,styleLabel,styleInput,st
             id="comentarios"
             name="comentarios"
             className={styleTextArea}
-            value={Inputs.comentarios} 
-            onChange={handleChange}  
+            value={Inputs.comentarios}
+            onChange={handleChange}
             onBlur={handleBlur}
           />
-           { 
-          error.comentarios && <p style={errorStyles}>{error.comentarios}</p>
-          }
+          {error.comentarios && <p style={errorStyles}>{error.comentarios}</p>}
         </div>
+        
         <div>
-          <Button referencia={ButtonForm}>enviar</Button>
+          <Button referencia={ButtonForm} styles="buttonGlobal" >Enviar</Button>
           <p ref={textForm}></p>
         </div>
       </form>

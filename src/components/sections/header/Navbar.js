@@ -3,7 +3,7 @@ import RedesMenu from "./redesMenu";
 import Button from "../../Button";
 import "./Navbar.css"
 import Link from "../../Link";
-export default function Navbar({menuActive}){  
+export default function Navbar({menuActive, MenuToggle}){  
   
     return(<> 
     <div className="MenuContainer"> 
@@ -17,7 +17,7 @@ export default function Navbar({menuActive}){
         </nav> 
     <div className="redes-container"> 
         <RedesMenu />  
-        <Button styles="menuButton" handleButton={menuActive}><i className="fa-solid fa-bars"></i></Button>
+        <Button styles="menuButton" handleButton={menuActive}>{MenuToggle?<i className="fa-sharp fa-solid fa-xmark"></i>:<i className="fa-solid fa-bars"></i> }</Button>
     </div>
     </div>
     </>)

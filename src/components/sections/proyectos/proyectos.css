@@ -29,12 +29,18 @@
 }
 
 .proyecto{
-    background-color: var(--color-secundario); 
+    background: url("../../../assets/images/construyendo-web.webp") center no-repeat fixed; 
+    background-size: 100% 100%; 
     border-radius: 10px; 
-    height: 200px; 
+    height: 250px; 
     display: flex; 
     justify-content: center; 
-    align-items: center;
+    align-items: center; 
+    transition: background-size linear 0.3s;
+
+}
+.proyectoActive{ 
+background-size: 120% 120%;
 }
 .proyecto1{  
     grid-area: proyecto1;  
@@ -55,14 +61,41 @@
 .presentationProyect{ 
     background-color: rgba(0, 0, 0, 0.4); 
     width: 95%; 
-    height: 125px;
+    height: 210px;
     border-radius: 5px;
     transform: scale(0);
-    transition: transform ease 0.3s;   
+    transition: transform ease 0.2s;   
 }
 
 .presentationProyectActive { 
     transform: scale(1); 
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .proyectosGrid{  
+        grid-template-areas: 
+        "proyecto1 proyecto1 proyecto1 proyecto1"
+        "proyecto2 proyecto2 proyecto2 proyecto2"
+        "proyecto3 proyecto3 proyecto3 proyecto3"
+        "proyecto4 proyecto4 proyecto4 proyecto4"
+        "proyecto5 proyecto5 proyecto5 proyecto5"
+        ;
+    }
+    .presentationProyect{ 
+        transform: scale(1);
+    } 
+    .proyecto{ 
+        height: 200px;
+    }
+    .proyectoActive{ 
+        background-size: 100% 100%;
+    }
+    .presentationProyect{
+        height: 170px;
+    }
+    .backgroundProyects{ 
+        padding: 30px 0px 60px 0px;
+    }
 }
 

@@ -39,7 +39,7 @@ export function useValidateForm(initialState, textForm, ButtonForm ) {
     setError(validateForm(Inputs));
 
     if (Object.keys(error).length === 0) {
-      let url = "https://formsubmit.co/ajax/abraham.ech9@gmail.c";
+      let url = "https://formsubmit.co/ajax/abraham.ech9@gmail.co";
       fetchPost(
         url,
         Inputs.name,
@@ -52,7 +52,10 @@ export function useValidateForm(initialState, textForm, ButtonForm ) {
       clearForm();
     } else {
       alert("lo sentimos el formulario no puede ser enviado");
-    }
+    }; 
+    setError({
+      initialError: true
+    })
     // si el objeto de errores viene vacio entonces podemos enviar el formulario
   };
   return {

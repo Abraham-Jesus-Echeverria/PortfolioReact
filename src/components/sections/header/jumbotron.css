@@ -11,7 +11,7 @@
     grid-column: 1/7;   
     grid-row: 1/9;  
     background-color: red;
-    background: url("../../../assets/images/computadora2.jpg") no-repeat scroll center;
+    background: url("../../../assets/images/computadora2.jpg") no-repeat fixed center;
     background-size: cover;
 } 
 .textContainer{ 

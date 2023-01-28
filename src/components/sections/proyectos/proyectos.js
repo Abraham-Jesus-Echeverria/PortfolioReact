@@ -26,11 +26,11 @@ export default function ProyectosSection() {
       <h2 className="titleProyectos">Proyectos</h2>
         <div className="proyectosGrid"> 
         {/* le enviamos como prop el valor del indice del estado al cual corresponde cada card por ejemplo la primera card equivale a la posicion 0  */}
-        <CardProyect stylesCard="proyecto1 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[0]} id="0" /> 
-        <CardProyect stylesCard="proyecto2 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[1]} id="1" />
-        <CardProyect stylesCard="proyecto3 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[2]} id="2" />
-        <CardProyect stylesCard="proyecto4 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[3]} id="3" />
-        <CardProyect stylesCard="proyecto5 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[4]} id="4" />  
+        <CardProyect stylesCard="proyecto1 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[0]} id="0" UrlProyect={"./proyect1"} /> 
+        <CardProyect stylesCard="proyecto2 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[1]} id="1" UrlProyect={"./proyect2"} />
+        <CardProyect stylesCard="proyecto3 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[2]} id="2" UrlProyect={"./proyect3"}/>
+        <CardProyect stylesCard="proyecto4 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[3]} id="3" UrlProyect={"./proyect4"}/>
+        <CardProyect stylesCard="proyecto5 proyecto" handleMouseOver={ActiveProyect} handleMouseOut={disabledActiveProyect} activeProyect={activeProyect[4]} id="4" UrlProyect={"./proyect5"}/>  
 
         </div>
       </div>

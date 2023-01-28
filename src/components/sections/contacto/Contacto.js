@@ -1,6 +1,8 @@
 import React from "react"; 
 import "./contacto.css"
-import Formulario from "../../Formulario";
+import Formulario from "../../Formulario"; 
+import PersonalInformation from "../../personalInformation"; 
+import AeLogo from "../../../assets/images/AE-LOGO-NONEBACKGROUND.png"
 
 export default function Contacto() { 
     return(
@@ -9,10 +11,13 @@ export default function Contacto() {
           <div className="clipPath backgroundContacto"> 
           <h2 className="titleContact"> Contactame </h2>
             <div className="containerContactFormulario">  
-            <Formulario styleInputContainer="styleInputContainer InputContainerMargin" styleInput="styleInput inputContactStyle" styleLabel="styleLabel" styleTextArea="styleTextArea InputContactStyle"/> 
-            <div className="redesMenuForm"> 
-            redes
-            </div>
+              <Formulario styleInputContainer="styleInputContainer InputContainerMargin" styleInput="styleInput inputContactStyle" styleLabel="styleLabel" styleTextArea="styleTextArea InputContactStyle"/> 
+                <div className="redesMenuForm"> 
+                  <PersonalInformation stylesContainer="containerInformation" stylesItems="stylesItems" /> 
+                  <div className="imageContainerContacto">
+                    <img src={AeLogo} alt="Logotipo" className="imageContacto" />
+                  </div>
+                </div> 
             </div>
           </div>
         </section>

@@ -37,6 +37,16 @@ body{
   cursor: pointer; 
   transform: scale(1.2);
 } 
+
+.disabledButton{ 
+  opacity: 0.5;
+}
 .clipPath{ 
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+@media screen and (max-width: 900px) {
+  .clipPath{ 
+    clip-path: none;
+  }
 }

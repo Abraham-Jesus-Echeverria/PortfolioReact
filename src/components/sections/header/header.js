@@ -17,7 +17,7 @@ export default function Header(){
     return(<> 
     <header>   
         <ModalForm Modal={Modal} modalActive={modalActive}/>
-        <Navbar menuActive={menuActive}/>  
+        <Navbar menuActive={menuActive} MenuToggle={Menu}/>  
         <MenuHamburguesa Menu={Menu}/>
         <Jumbotrom modalActive={modalActive}/> 
         

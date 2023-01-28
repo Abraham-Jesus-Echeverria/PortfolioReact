@@ -4,6 +4,7 @@ import Header from './components/sections/header/header';
 import AboutMe from './components/sections/aboutme/aboutMe';
 import ProyectosSection from './components/sections/proyectos/proyectos'; 
 import Contacto from './components/sections/contacto/contacto';
+import Footer from './components/sections/footer/footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutMe />
       <ProyectosSection /> 
       <Contacto /> 
+      <Footer />
     </div>
   );
 }
