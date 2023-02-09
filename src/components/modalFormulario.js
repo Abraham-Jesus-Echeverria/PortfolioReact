@@ -1,5 +1,5 @@
 import React from "react"; 
-import "./modalForm.css" 
+import "./ModalForm.css" 
 import Button from "./Button"; 
 import Formulario from "./Formulario";
 

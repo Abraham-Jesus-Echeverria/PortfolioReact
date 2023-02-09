@@ -1,7 +1,7 @@
 import React from "react";  
 import "./footer.css"
 import Link from "../../Link"; 
-import PersonalInformation from "../../personalInformation";
+import PersonalInformation from "../../PersonalInformation";
 
 export default function Footer(){ 
     return(<> 

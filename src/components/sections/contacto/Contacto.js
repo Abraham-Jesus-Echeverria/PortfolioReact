@@ -1,7 +1,7 @@
 import React from "react"; 
 import "./contacto.css"
 import Formulario from "../../Formulario"; 
-import PersonalInformation from "../../personalInformation"; 
+import PersonalInformation from "../../PersonalInformation"; 
 import AeLogo from "../../../assets/images/AE-LOGO-NONEBACKGROUND.png"
 
 export default function Contacto() { 

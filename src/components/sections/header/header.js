@@ -1,7 +1,7 @@
 import React,{useState} from "react";  
 import Navbar from "./Navbar";
 import Jumbotrom from "./jumbotron"; 
-import ModalForm from "../../modalFormulario";  
+import ModalForm from "../../ModalFormulario";  
 import MenuHamburguesa from "../../MenuHamburguesa";
 
 export default function Header(){  
