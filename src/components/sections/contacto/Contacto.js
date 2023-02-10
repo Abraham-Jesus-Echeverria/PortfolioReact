@@ -7,7 +7,7 @@ import AeLogo from "../../../assets/images/AE-LOGO-NONEBACKGROUND.png"
 export default function Contacto() { 
     return(
         <>  
-        <section className="sectionContacto"> 
+        <section className="sectionContacto" id="Contacto"> 
           <div className="clipPath backgroundContacto"> 
           <h2 className="titleContact"> Contactame </h2>
             <div className="containerContactFormulario">  

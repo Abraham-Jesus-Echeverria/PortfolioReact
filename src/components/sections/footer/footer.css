@@ -14,7 +14,12 @@
 
 .linkStyleFooter{ 
     color: var(--color-white); 
-    font-size: 2rem;
+    font-size: 2rem; 
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.linkStyleFooter:hover{ 
+    transform: translateY(5px); 
+    color: var(--color-secundario);
 }
 .linksFooterContainer{ 
    display: flex; 

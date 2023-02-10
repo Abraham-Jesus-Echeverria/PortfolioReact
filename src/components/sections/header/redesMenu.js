@@ -1,4 +1,6 @@
-import React from "react";  
+import React from "react";   
+// import Link from "../../Link"; 
+import IconsRedes from "../../IconsRedes";
 const estilosContainer = {  
     width: "100px", 
     height: "250px", 
@@ -31,18 +33,10 @@ const iconsContainer = {
     color: "#fff", 
     marginTop: "40px", 
 }
-const linksStyles = { 
-    textDecoration: "none", 
-    color: "#fff",
-}
 export default function RedesMenu ({iconStyleHover}) {  
     return(<> 
     <div className="redesMenu" style={estilosContainer}> 
-    <div style={iconsContainer}>  
-       <a href="#/github" style={linksStyles}><i className={`fa-brands fa-github ${iconStyleHover}`}></i></a> 
-       <a href="#/linkedin" style={linksStyles}><i className={`fa-brands fa-linkedin ${iconStyleHover}`}></i></a>
-       <a href="#/codepen" style={linksStyles}><i className={`fa-brands fa-codepen ${iconStyleHover}`}></i></a> 
-    </div>
+    <IconsRedes  iconsContainer={iconsContainer} iconStyleHover={iconStyleHover} linkStyle="LinkStyleRedes"/>  
         <div style={etiqueta}>Follow me</div>
     </div>
     </>)

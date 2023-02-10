@@ -2,6 +2,7 @@ import React from "react";
 import "./MenuHamburguesa.css";
 import Link from "./Link";  
 import logo from "../assets/images/AE-LOGO-NONEBACKGROUND.png";
+import IconsRedes from "./IconsRedes";
 
 export default function MenuHamburguesa({ Menu }) {
   return (
@@ -24,12 +25,8 @@ export default function MenuHamburguesa({ Menu }) {
             <img src={logo} alt="logo" className="logoHamburguesa" />
           </div>
           <div className="redesMenuHamburguesa"> 
-            <h2> ¡Follow me! </h2>
-            <div className="containerIconsHamburguesa"> 
-              <Link url="/gitHub" linkStyle="LinkStyleRedes"><i className="fa-brands fa-github"></i></Link> 
-              <Link url="/codePen" linkStyle="LinkStyleRedes"><i className="fa-brands fa-codepen"></i></Link>
-              <Link url="/Linkedin" linkStyle="LinkStyleRedes"><i className="fa-brands fa-linkedin"></i></Link> 
-            </div>
+            <h2> ¡Follow me! </h2> 
+            <IconsRedes classStyleIconsContainer="containerIconsHamburguesa" linkStyle="LinkStyleRedes"/>
           </div>
         </div>
       </div>
