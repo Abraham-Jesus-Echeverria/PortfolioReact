@@ -65,7 +65,6 @@
 .styleInputContainer{
     display: flex; 
     flex-direction: column;
-    /* background-color: aqua;  */
     width: 100%;
 } 
 .styleLabel{ 
@@ -73,10 +72,15 @@
     font-size: 1.2rem;
 }
 .styleInput{ 
+    height: 25px; 
+    margin-bottom: 5px;
+}
+.stylesCloseButtomstylesCloseButtomInput{ 
     height: 25px;
     margin-bottom: 5px; 
     padding: 0 7px;
 }
+
 .styleTextArea{ 
     resize: none; 
     padding: 0 7px;

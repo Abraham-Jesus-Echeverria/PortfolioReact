@@ -35,13 +35,13 @@ const linksStyles = {
     textDecoration: "none", 
     color: "#fff",
 }
-export default function RedesMenu () {  
+export default function RedesMenu ({iconStyleHover}) {  
     return(<> 
     <div className="redesMenu" style={estilosContainer}> 
     <div style={iconsContainer}>  
-       <a href="#/github" style={linksStyles}><i className="fa-brands fa-github"></i></a> 
-       <a href="#/linkedin" style={linksStyles}><i className="fa-brands fa-linkedin"></i></a>
-       <a href="#/codepen" style={linksStyles}><i className="fa-brands fa-codepen"></i></a> 
+       <a href="#/github" style={linksStyles}><i className={`fa-brands fa-github ${iconStyleHover}`}></i></a> 
+       <a href="#/linkedin" style={linksStyles}><i className={`fa-brands fa-linkedin ${iconStyleHover}`}></i></a>
+       <a href="#/codepen" style={linksStyles}><i className={`fa-brands fa-codepen ${iconStyleHover}`}></i></a> 
     </div>
         <div style={etiqueta}>Follow me</div>
     </div>

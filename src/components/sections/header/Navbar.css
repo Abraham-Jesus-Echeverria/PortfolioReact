@@ -43,7 +43,23 @@ color: var(--color-white);
 
 .menuButton{ 
     display: none;
+} 
+.linkStyleNavbar{ 
+    font-size: 1.2rem;
 }
+.linkStyleNavbar:hover{ 
+    font-weight: bold; 
+    color: var(--color-secundario);
+}
+
+.iconStyleHover{ 
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+.iconStyleHover:hover{ 
+    transform: scale(1.2);
+}
+
 
 @media screen and (max-width: 900px ) { 
     .nameStyle{ 

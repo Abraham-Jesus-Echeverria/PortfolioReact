@@ -6,6 +6,9 @@ const errorStyles = {
   color: "red", 
   marginBottom: "6px"
 }
+const styleModalButton = { 
+  backgroundColor: "var(--color-redes)"
+}
 export default function Formulario({styleInputContainer,styleLabel,styleInput,styleTextArea}) { 
   let textForm = useRef();  
   let ButtonForm = useRef(); 
@@ -87,7 +90,7 @@ export default function Formulario({styleInputContainer,styleLabel,styleInput,st
         </div>
         
         <div>
-          <Button referencia={ButtonForm} styles="buttonGlobal" >Enviar</Button>
+          <Button referencia={ButtonForm} styles="buttonGlobal" styleModalButton={styleModalButton} >Enviar</Button>
           <p ref={textForm}></p>
         </div>
       </form>

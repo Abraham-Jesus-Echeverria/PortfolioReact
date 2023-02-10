@@ -14,20 +14,29 @@ export default function AboutMe() {
           <img src={Foto} alt="Fotografia" className="fotoAbout" />
         </div>
         <div className="containerTextAbout"> 
-      <p className="textStyle">Soy una persona apasionada por la tecnología y la innovación, actualmente cuento con una ingeniera en mecatrónica orientada hacia el area de la automatización y cuento con conocimientos en diversos lenguajes de programación para dispositivos como microcontroladores, y lenguajes gráficos para PLC'S de tipo escalera o de compuertas lógicas de la misma manera tengo conocimientos sólidos en electrónica. </p> 
-      <p className="textStyle">Estoy interesado en el desarrollo web, por lo cual he estado aprendiendo desarrollo <span>Front End</span> de forma autodidacta, actualmente cuento con conocimientos en HTML, CSS, Java Script, React.js, Boostrap5 y próximamente espero aprender a utilizar el framework Next.js y desarrollo backend, asi como un preprocesador de CSS como Sass</p>
-      <div className="containerButtonAbout"> 
-        <Button styles="buttonAbout buttonGlobal">Descarga mi CV</Button>   
-        <div className="containerIconsAbout"> 
-           <i className="fa-brands fa-html5"></i>
-           <i className="fa-brands fa-css3-alt"></i>  
-           <i className="fa-brands fa-react"></i>
-           <i className="fa-brands fa-js"></i>
-           <i className="fa-brands fa-git"></i>
-           <i className="fa-brands fa-bootstrap"></i>
+      <div>
+        <p className="textStyle textStyleBold textStyle1_3rem"> !Ingeniero Mecatronico / Web developer jr!</p>  
+        <p className="textStyle">Gusto por la inovacion y la tecnologia, he decidido dar un giro a mi carrera aprendiendo las ultimas tecnologias del desarrollo front end</p>  
+        <div className="badgeContainer"> 
+          <div className="badge">Electronica</div> 
+          <div className="badge">Microcontroladores</div> 
+          <div className="badge">PLC</div>
+          <div className="badge">Automatizacion</div> 
+          <div className="badge">Desarrollo web </div>
         </div>
-
       </div>
+      <div className="containerConocimientosAbout">   
+        <p className="textStyle textStyleBold"> Conocimientos en: </p>
+        <div className="containerIconsAbout"> 
+           <i className="fa-brands fa-html5 iconAboutHover htmlColor"></i>
+           <i className="fa-brands fa-css3-alt iconAboutHover cssColor"></i>  
+           <i className="fa-brands fa-react iconAboutHover reactColor"></i>
+           <i className="fa-brands fa-js iconAboutHover jsColor"></i>
+           <i className="fa-brands fa-git iconAboutHover gitColor"></i>
+           <i className="fa-brands fa-bootstrap iconAboutHover boostrapColor"></i>
+        </div>  
+      </div> 
+      <Button styles="buttonAbout buttonGlobal">Descarga mi CV</Button>
         </div>
       </div> 
       </div>

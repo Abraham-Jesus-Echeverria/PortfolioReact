@@ -2,6 +2,9 @@ import React from "react";
 import "./ModalForm.css" 
 import Button from "./Button"; 
 import Formulario from "./Formulario";
+const styleModalButton = { 
+    backgroundColor: "var(--color-primario)"
+}
 
 export default function ModalForm ({Modal, modalActive}) { 
     return(<> 

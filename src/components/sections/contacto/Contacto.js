@@ -13,6 +13,7 @@ export default function Contacto() {
             <div className="containerContactFormulario">  
               <Formulario styleInputContainer="styleInputContainer InputContainerMargin" styleInput="styleInput inputContactStyle" styleLabel="styleLabel" styleTextArea="styleTextArea InputContactStyle"/> 
                 <div className="redesMenuForm"> 
+                  <h2 className="titleInformation">Mas informacion</h2>
                   <PersonalInformation stylesContainer="containerInformation" stylesItems="stylesItems" /> 
                   <div className="imageContainerContacto">
                     <img src={AeLogo} alt="Logotipo" className="imageContacto" />

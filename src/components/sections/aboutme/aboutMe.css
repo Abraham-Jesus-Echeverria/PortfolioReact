@@ -41,15 +41,62 @@
     max-width: 75%; 
     height: auto;
 }
-.containerButtonAbout{ 
-    display: flex;
+.containerConocimientosAbout{ 
+    display: flex; 
+    flex-direction: column;
 }
 .containerIconsAbout{ 
     font-size: 2.5rem;
     display: flex; 
     gap: 20px;
-    margin-left: 30px;
+    margin-bottom: 1rem;
 }
+
+.badge{  
+    margin: 6px 12px 6px 0;
+    padding: 3px 10px;
+    border-radius: 16px;  
+    background-color: var(--color-secundario);
+}
+.badgeContainer{ 
+    display: flex;  
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.iconAboutHover{ 
+    transition: transform 0.2s ease-in-out;
+}
+
+.iconAboutHover:hover{ 
+    transform: scale(1.2);  
+} 
+
+.htmlColor:hover{ 
+    color: #e34f26;
+}
+
+.cssColor:hover{ 
+    color: #004CE8;
+}
+
+.reactColor:hover{ 
+    color: #00d8ff; 
+}
+
+.jsColor:hover{ 
+    color: #f7df1e;
+}
+
+.gitColor:hover{ 
+    color: #c9510c;
+} 
+
+.boostrapColor:hover{ 
+    color: #7711F7;
+}
+
+
+
 
 @media screen and (max-width: 1000px) {
     .containerContentAbout{ 
