@@ -10,9 +10,9 @@ export default function Navbar({menuActive, MenuToggle}){
     <div className="nameStyle">ABRAHAM<span>E</span></div>
         <nav className="Navbar"> 
             <ul className="listStyle">  
-                <li><Link url={"#About"} linkStyle="linkStyleNavbar">About</Link></li> 
-                <li><Link url={"/Proyectos"} linkStyle="linkStyleNavbar">Proyectos</Link></li> 
-                <li><Link url={"/Contacto"} linkStyle="linkStyleNavbar">Contacto</Link></li>
+                <li><Link url={"#About"} linkStyle="linkStyleNavbar" target={null}>About</Link></li> 
+                <li><Link url={"#Proyectos"} linkStyle="linkStyleNavbar">Proyectos</Link></li> 
+                <li><Link url={"#Contacto"} linkStyle="linkStyleNavbar">Contacto</Link></li>
             </ul>
         </nav> 
     <div className="redes-container"> 

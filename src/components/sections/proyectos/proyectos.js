@@ -21,7 +21,7 @@ export default function ProyectosSection() {
     setActiveProyect(()=>[false, false, false, false, false])  
   }
     return (<>
-    <section className="proyectosSectionStyles"> 
+    <section className="proyectosSectionStyles" id="Proyectos"> 
       <div className="clipPath backgroundProyects"> 
       <h2 className="titleProyectos">Proyectos</h2>
         <div className="proyectosGrid"> 

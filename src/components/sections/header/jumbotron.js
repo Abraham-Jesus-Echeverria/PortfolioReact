@@ -7,7 +7,6 @@ export default function Jumbotrom({ modalActive }) {
     <>
       <div className="jumbotronContainer">
         <div className="imageContainer">
-          {/* <img src={Computadora} alt="imagen computadora1"className="imageStyle"/> */}
         </div>
         <div className="textContainer">
           <h1 className="titleStyle">

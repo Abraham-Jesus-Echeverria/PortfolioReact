@@ -6,7 +6,7 @@ import Button from "../../Button";
 export default function AboutMe() { 
     return (<> 
     
-    <section className="SectionContainer">  
+    <section className="SectionContainer" id="About">  
     <div className="backgroundAbout clipPath"> 
       <h2 className="titleAbout">¡Acerca de mi!</h2> 
       <div className="containerContentAbout"> 
