@@ -2,8 +2,7 @@ export function validateForm(Inputs) {
     let errores = {};
     let RegexNombre = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     let RegexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-    let regexPhone = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;  
-    let RegexComments = /^.{1,255}$/;
+    let regexPhone = /^\d{7,14}$/;  
 
     if (!Inputs.name.trim()) {
       errores.name = "el campo nombre es solicitado";
@@ -22,12 +21,6 @@ export function validateForm(Inputs) {
       errores.telefono = "el campo telefono es requerido";
     } else if (!regexPhone.test(Inputs.telefono.trim())){ 
       errores.telefono = "Escribe un numero telefonico valido"
-    }
-
-    if (!Inputs.comentarios.trim()) {
-      errores.comentarios = "el campo comentarios es requerido";
-    } else if (!RegexComments.test(Inputs.comentarios.trim())) {
-      errores.comentarios = "no puedes ingresar mas de 255 caracteres";
     }
 
     return errores;

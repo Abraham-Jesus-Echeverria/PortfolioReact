@@ -42,6 +42,7 @@ body{
   font-size: 0.9rem;
   transition: transform 0.2s linear, background-color 0.2s linear;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .buttonGlobal:hover{ 

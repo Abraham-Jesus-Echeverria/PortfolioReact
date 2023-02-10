@@ -55,11 +55,12 @@
     justify-content: flex-end;
 }
 .formContainer{ 
+    color: var(--color-white); 
+    border: 2px solid var(--color-secundario);
     width: 70%;
     margin: 0 auto;
-    background-color: var(--color-secundario);  
     box-sizing: border-box; 
-    padding: 10px; 
+    padding: 15px; 
     border-radius: 10px;
 } 
 .styleInputContainer{
@@ -68,20 +69,16 @@
     width: 100%;
 } 
 .styleLabel{ 
-    margin-bottom: 5px; 
+    margin-bottom: 10px; 
     font-size: 1.2rem;
 }
 .styleInput{ 
     height: 25px; 
-    margin-bottom: 5px;
-}
-.stylesCloseButtomstylesCloseButtomInput{ 
-    height: 25px;
-    margin-bottom: 5px; 
-    padding: 0 7px;
+    margin-bottom: 10px;
 }
 
 .styleTextArea{ 
+    height: 25px;
     resize: none; 
     padding: 0 7px;
     margin-bottom: 10px;
